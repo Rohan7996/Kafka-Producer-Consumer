@@ -1,0 +1,10 @@
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+#we have to serialize the message while doing producer to consumer
+#  zookeeper-server-start.bat ..\..\config\zookeeper.properties
+#  kafka-server-start.bat ..\..\config\server.properties
